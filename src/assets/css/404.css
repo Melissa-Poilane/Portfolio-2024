@@ -1,0 +1,64 @@
+
+body {
+    @apply relative flex justify-center items-center flex-col min-h-screen overflow-hidden;
+}
+
+body:before,
+body:after {
+  
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    @apply content-[''] absolute left-1/2 min-w-[300vw] min-h-[300vw] bg-pink-500 ;
+}
+
+body:before {
+    @apply bottom-[15vh] rounded-[45%];
+    animation-duration: 10s;
+}
+
+body:after {
+    @apply bottom-[12vh] opacity-50 rounded-[47%];
+    animation-duration: 10s;
+}
+
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, 0) rotateZ(0deg);
+    }
+
+    50% {
+        transform: translate(-50%, -2%) rotateZ(180deg);
+    }
+
+    100% {
+        transform: translate(-50%, 0%) rotateZ(360deg);
+    }
+}
+
+h1,
+h2 {
+    @apply  z-10 text-center ;
+}
+
+
+
+.circle {
+   @apply relative w-[180px] h-[200px] rounded-full bg-transparent shadow-[rgba(145,114,244,1)] z-50;
+}
+
+.errorPage__button {
+   @apply text-amber-600 block cursor-pointer border border-white px-10 py-2 tracking-wider font-black bg-white transition-transform duration-300 ease-in-out z-50 rounded;
+   box-shadow: 7px 7px 20px rgba(24, 24, 27, 0.5);
+}
+
+.errorPage__button:hover {
+    @apply bg-pink-500 text-white border-pink-700;
+}
+
+
+
+a {
+    text-decoration: none;
+    z-index: 99;
+}

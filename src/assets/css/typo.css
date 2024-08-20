@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'nanamibold';
+    src: url('../typo/nanami-bold-webfont.woff2') format('woff2'),
+         url('../typo/nanami-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'nanamilight';
+    src: url('../typo/nanami-light-webfont.woff2') format('woff2'),
+         url('../typo/nanami-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'nanamiregular';
+    src: url('../typo/nanami-regular-webfont.woff2') format('woff2'),
+         url('../typo/nanami-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'delmsemilight';
+    src: url('../typo/delm-semilight-webfont.woff2') format('woff2'),
+         url('../typo/delm-semilight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'delmbold';
+    src: url('../typo/Delm-Bold.woff2') format('woff2'),
+         url('../typo/Delm-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

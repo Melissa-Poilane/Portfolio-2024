@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+h1, h3, h4, .h5 {
+    @apply font-NanamiRegular;
+}
+
+h2, h5, h6 { 
+    @apply  font-NanamiRegular;
+}
+
+    h1 {
+        @apply text-3xl font-normal;
+    }
+
+    h2 {
+        @apply text-[28px] leading-[30.8px] font-NanamiBold;
+    }
+
+    h3 {
+        @apply text-4xl;
+    }
+
+    h4 {
+        @apply text-xl text-violet-500;
+    }
+
+    h5, .h5 {
+        @apply text-base;
+    }
+    h6 {
+        @apply text-[14px];
+    }
+
+    body {
+        @apply text-lg font-DelSemiLight text-gray-50 bg-violet-950;
+    }
+
+    .BodyS {
+        @apply text-xs font-NanamiLight;
+    }
+
+    small {
+        @apply text-[10px] leading-[13.42px] text-zinc-400 my-1;
+    }
+
+    input {
+        @apply bg-transparent border border-gray-50 rounded-xl p-3 w-full text-base mt-2;
+    }
+
+    input:focus {
+        @apply bg-violet-800;
+      }
+}
+
+@layer components {
+    .container {
+        @apply max-w-screen-xl mx-auto px-6;
+    }
+    path {
+        @apply transition-all ease-in-out duration-100;
+    }
+    .router-link-active path {
+        @apply stroke-violet-500;
+    }
+    .tab-item {
+        @apply flex justify-center items-center transition-all ease-in-out duration-300 bg-zinc-900 w-24 h-12 relative rounded-t-full;
+    }
+    .tabbar .router-link-active  {
+        @apply h-[115px] -top-4 bg-zinc-900 p-5 rounded-t-full;
+    }
+    .router-link-active div {
+        @apply bg-violet-500;
+    }
+    
+    .tabbar .router-link-active:before,
+    .tabbar .router-link-active:after {
+        @apply content-[''] absolute w-[30px] h-[25px] border-b-4 border-zinc-900 top-[5px];
+    }
+      
+    .tabbar .router-link-active:before {
+        @apply rounded-br-[60%] -left-[18.5px];
+    }
+    .tabbar .router-link-active:after {
+        border-bottom-left-radius: 60%;
+        right: -18.5px;
+    }
+      
+      
+input[type="checkbox"] {
+   @apply appearance-none border-none bg-transparent w-5 h-5 relative;
+}
+
+input[type="checkbox"]::before {
+   @apply content-[''] block w-5 h-5 border-2 border-white rounded-lg absolute -top-0.5 left-1 ;
+}
+
+input[type="checkbox"]:checked::before {
+    @apply bg-center bg-no-repeat;
+    background-image: url('../img/icones/check.svg');
+}
+
+
+.degradsombre {
+    @apply bg-gradient-to-b from-[#361271] to-violet-900 ;
+}
+.active {
+    @apply relative;
+}
+
+.active::after {
+    @apply content-[''] flex border-b-2 border-gray-50 w-[75%] rounded-full absolute left-1/2 transform -translate-x-1/2;
+}
+}
